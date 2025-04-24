@@ -1,0 +1,9 @@
+data = '{"name":"MyYong","Age":30,"Address":{"StreetAddress":"88 2nd street","City":"New York"},"phoneNumber":[{"type":"home","number":1234567890},{"type":"office","number":1345223445}]}'
+let obj = JSON.parse(data)
+console.log(obj.Address.StreetAddress)
+console.log(obj["Address"].StreetAddress)
+console.log(obj["name"])
+console.log(obj.Age)
+console.log(obj.phoneNumber)
+console.log(obj.phoneNumber[0].number+" "+obj.phoneNumber[0].type)
+console.log(obj.phoneNumber[1].number+" "+obj.phoneNumber[1].type)
